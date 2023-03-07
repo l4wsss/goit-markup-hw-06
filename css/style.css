@@ -568,6 +568,7 @@ footer {
   border-radius: 4px;
   background-color: var(--dark);
   width: 264px;
+  height: 40px;
 
   padding: 8px 16px;
 }
@@ -756,6 +757,8 @@ footer {
   height: 584px;
   top: 50%;
   left: 50%;
+  padding: 72px 24px;
+  padding-bottom: 24px;
   visibility: visible;
 
   background: #fcfcfc;
@@ -798,31 +801,30 @@ footer {
 }
 
 /* Modal form */
-.modal-form {
-  padding: 72px 24px;
-}
-
 .modal-text {
+  display: inline-block;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--dark);
-}
 
-.modal-form-list {
-  margin-top: 14px;
+  margin-bottom: 16px;
 }
 
 .modal-form-item {
-  display: flex;
-  flex-direction: column;
-
   position: relative;
+  display: block;
+  margin-bottom: 8px;
 }
 
-.modal-label {
+.modal-form-item:last-child {
+  margin-bottom: 16px;
+}
+
+.modal-label-text {
+  display: block;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
@@ -836,13 +838,6 @@ footer {
   letter-spacing: 0.04em;
 }
 
-.label-privacy {
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.04em;
-  color: #757575;
-}
-
 .modal-input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -853,7 +848,6 @@ footer {
   line-height: 16px;
   letter-spacing: 0.04em;
 
-  margin-bottom: 8px;
   padding: 8px 16px;
   padding-left: 38px;
 
@@ -861,7 +855,7 @@ footer {
 }
 
 .modal-input:last-child {
-  padding-left: 8px;
+  padding-left: 16px;
 }
 
 .modal-input:focus {
@@ -870,7 +864,7 @@ footer {
 
 .modal-input-icon {
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 16px;
 
   height: 18px;
@@ -884,11 +878,10 @@ footer {
 }
 
 .modal-textarea {
-  padding-bottom: 0;
   height: 120px;
 }
 
-.modal-form textarea::placeholder {
+.modal-form-item textarea::placeholder {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.04em;
@@ -898,11 +891,6 @@ footer {
 .label-privacy {
   display: flex;
   align-items: center;
-
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.04em;
-
   margin-bottom: 24px;
 }
 
@@ -929,16 +917,23 @@ footer {
   background-origin: border-box;
 }
 
+.modal-label-text-privacy {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  color: #757575;
+}
+
 .privacy-link {
   text-decoration-line: underline;
   color: var(--primary-brand);
-  margin-left: 3px;
+  margin-left: 2px;
 }
 
 .btn-submit {
   width: 169px;
+  height: 56px;
   padding: 16px 32px;
-  gap: 10px;
   background-color: var(--primary-brand);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -953,6 +948,7 @@ footer {
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--white);
+
   margin-right: auto;
   margin-left: auto;
 }
